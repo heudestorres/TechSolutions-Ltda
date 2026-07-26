@@ -34,13 +34,13 @@ O projeto documenta desde a instalação do sistema operacional até a administr
 ---
 
 ## Estrutura
-docs/
-imagens/
-scripts/
-README.md
-RUNBOOK.md
-CHANGELOG.md
-LESSONS_LEARNED.md
+-docs
+-imagens
+-scripts
+-README.md
+-RUNBOOK.md
+-CHANGELOG.md
+-LESSONS_LEARNED.md
 
 
 ---
