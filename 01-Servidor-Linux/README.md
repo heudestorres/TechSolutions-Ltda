@@ -1,39 +1,50 @@
-# Projeto 01 - Servidor Linux
+# Projeto 01 - Ubuntu Server
 
 ## Objetivo
 
-Implementar um servidor Ubuntu Server para uso em um ambiente corporativo fictício da TechSolutions Ltda.
+Implantar um servidor Ubuntu Server simulando um ambiente corporativo da empresa fictícia TechSolutions Ltda.
 
-Este projeto documenta toda a implantação do servidor, desde a instalação até a configuração dos serviços necessários para os próximos projetos da mentoria.
+O projeto documenta desde a instalação do sistema operacional até a administração do servidor, preparando o ambiente para os próximos projetos da mentoria.
 
 ---
 
 ## Tecnologias
 
-- Ubuntu Server
-- OpenSSH
-- Netplan
-- UFW
+- Ubuntu Server 26.04 LTS
+- OpenSSH Server
+- systemd
+- APT
 - Bash
+- VMware Workstation
 
 ---
 
-## Status
+## Competências Desenvolvidas
 
-🟡 Em desenvolvimento
+- Instalação do Ubuntu Server
+- Estrutura do Sistema de Arquivos
+- Administração de Usuários e Grupos
+- Permissões de Arquivos
+- Gerenciamento de Serviços (systemd)
+- Monitoramento de Processos
+- Análise de Logs
+- Gerenciamento de Pacotes
+- Fundamentos de Redes Linux
 
 ---
 
 ## Estrutura
-
-```text
 docs/
 imagens/
 scripts/
-```
+README.md
+RUNBOOK.md
+CHANGELOG.md
+LESSONS_LEARNED.md
+
 
 ---
 
-## Documentação
+## Próximo Projeto
 
-A documentação será adicionada conforme cada etapa da implantação for concluída.
+Projeto 02 — SSH Seguro
