@@ -27,8 +27,8 @@ Este repositório faz parte da minha jornada de aprendizado e tem como objetivo 
 TechSolutions Ltda.
 
 ├── 01-Servidor-Linux
-├── 02-Docker
-├── 03-Nginx
+├── 02-SSH-Seguro
+├── 03-Docker
 ├── 04-Zabbix
 ├── 05-Grafana
 ├── 06-Azure
