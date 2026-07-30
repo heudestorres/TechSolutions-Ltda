@@ -39,10 +39,8 @@ Durante este projeto aprendi a:
 
 Durante a implementação, os principais pontos que exigiram mais atenção foram:
 
-- Compreender a diferença entre a chave pública e a chave privada.
-- Entender onde cada chave deve ser armazenada.
-- Compreender o funcionamento do arquivo `authorized_keys`.
-- Configurar corretamente as permissões do diretório `.ssh`.
+- Identificar por que a configuração `PasswordAuthentication no` não estava sendo aplicada.
+- Compreender a influência dos arquivos adicionais localizados em `/etc/ssh/sshd_config.d/`.
 
 ---
 
@@ -50,11 +48,7 @@ Durante a implementação, os principais pontos que exigiram mais atenção fora
 
 Os desafios foram resolvidos por meio de:
 
-- Estudo do funcionamento da autenticação assimétrica utilizada pelo SSH.
-- Realização de testes práticos entre o Windows e o Ubuntu Server.
-- Verificação do serviço SSH antes e depois das alterações.
-- Análise das permissões do diretório `.ssh` e do arquivo `authorized_keys`.
-- Validação da configuração utilizando o comando:
-
-```bash
-sudo sshd -t
+- Utilização do comando `grep` para localizar todas as configurações relacionadas a `PasswordAuthentication`.
+- Análise do arquivo `/etc/ssh/sshd_config.d/50-cloud-init.conf`.
+- Verificação da configuração efetiva utilizando `sudo sshd -T`.
+- Correção da configuração adicional do cloud-init e nova validação do serviço.
