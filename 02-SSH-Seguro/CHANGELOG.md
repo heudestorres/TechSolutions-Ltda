@@ -56,6 +56,12 @@ Todas as alterações relevantes deste projeto são registradas neste arquivo.
 - Configuração de tempo limite para autenticação.
 - Validação da sintaxe do arquivo `sshd_config`.
 - Realização de testes de acesso autorizado e acesso negado.
+- 
+- ### Corrigido
+
+- Ajustada a configuração `PasswordAuthentication` no arquivo `/etc/ssh/sshd_config.d/50-cloud-init.conf`.
+- Resolvido o conflito entre o arquivo principal `sshd_config` e a configuração adicional gerenciada pelo cloud-init.
+- Confirmada a desativação efetiva da autenticação por senha utilizando `sudo sshd -T`.
 
 ### Alterado
 
